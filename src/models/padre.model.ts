@@ -19,14 +19,13 @@ export class Padre extends Entity {
     type: 'number',
     required: true,
   })
-  persona_idPersona: number;
+  idPersona: number;
 
   @property({
     type: 'number',
     required: true,
   })
-  persona_usuario_idUser: number;
-
+  idUser: number;
 
   constructor(data?: Partial<Padre>) {
     super(data);

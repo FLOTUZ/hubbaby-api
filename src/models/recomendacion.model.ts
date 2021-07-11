@@ -25,13 +25,13 @@ export class Recomendacion extends Entity {
     type: 'number',
     required: true,
   })
-  ninera_idNinera: number;
+  idNinera: number;
 
   @property({
     type: 'number',
     required: true,
   })
-  ninera_persona_idPersona: number;
+  idPadre: number;
 
   constructor(data?: Partial<Recomendacion>) {
     super(data);

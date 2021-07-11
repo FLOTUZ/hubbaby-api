@@ -24,20 +24,7 @@ export class MetodoPago extends Entity {
     type: 'number',
     required: true,
   })
-  padre_idPadre: number;
-
-  @property({
-    type: 'number',
-    required: true,
-  })
-  padre_persona_idPersona: number;
-
-  @property({
-    type: 'number',
-    required: true,
-  })
-  padre_persona_usuario_idUser: number;
-
+  idPadre: number;
 
   constructor(data?: Partial<MetodoPago>) {
     super(data);

@@ -16,7 +16,7 @@ export class Reservacion extends Entity {
   n_hijos: number;
 
   @property({
-    type: 'geopoint',
+    type: 'string',
     required: true,
   })
   ubicacion: string;
@@ -73,38 +73,13 @@ export class Reservacion extends Entity {
     type: 'number',
     required: true,
   })
-  padre_idPadre: number;
+  idPadre: number;
 
   @property({
     type: 'number',
     required: true,
   })
-  padre_persona_idPersona: number;
-
-  @property({
-    type: 'number',
-    required: true,
-  })
-  padre_persona_usuario_idUser: number;
-
-  @property({
-    type: 'number',
-    required: true,
-  })
-  ninera_idNinera: number;
-
-  @property({
-    type: 'number',
-    required: true,
-  })
-  ninera_persona_idPersona: number;
-
-  @property({
-    type: 'number',
-    required: true,
-  })
-  ninera_persona_usuario_idUser: number;
-
+  idNinera: number;
 
   constructor(data?: Partial<Reservacion>) {
     super(data);

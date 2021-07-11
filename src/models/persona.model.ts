@@ -63,8 +63,7 @@ export class Persona extends Entity {
     type: 'number',
     required: true,
   })
-  usuario_idUser: number;
-
+  idUser: number;
 
   constructor(data?: Partial<Persona>) {
     super(data);

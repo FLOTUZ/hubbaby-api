@@ -25,38 +25,13 @@ export class Mensaje extends Entity {
     type: 'number',
     required: true,
   })
-  ninera_idNinera: number;
+  idNinera: number;
 
   @property({
     type: 'number',
     required: true,
   })
-  ninera_persona_idPersona: number;
-
-  @property({
-    type: 'number',
-    required: true,
-  })
-  ninera_persona_usuario_idUser: number;
-
-  @property({
-    type: 'number',
-    required: true,
-  })
-  padre_idPadre: number;
-
-  @property({
-    type: 'number',
-    required: true,
-  })
-  padre_persona_idPersona: number;
-
-  @property({
-    type: 'number',
-    required: true,
-  })
-  padre_persona_usuario_idUser: number;
-
+  idPadre: number;
 
   constructor(data?: Partial<Mensaje>) {
     super(data);
