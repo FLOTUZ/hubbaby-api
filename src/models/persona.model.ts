@@ -45,6 +45,12 @@ export class Persona extends Entity {
 
   @property({
     type: 'string',
+    required: true,
+  })
+  foto: string;
+
+  @property({
+    type: 'string',
   })
   ine_frontal?: string;
 
